@@ -1,4 +1,5 @@
-#version 120
+#ifndef CELLULAR_2D_H
+#define CELLULAR_2D_H
 
 // Cellular noise ("Worley noise") in 2D in GLSL.
 // Copyright (c) Stefan Gustavson 2011-04-19. All rights reserved.
@@ -67,3 +68,5 @@ vec2 cellular(vec2 P) {
 	d1.y = min(d1.y, d2.x); // F2 is in d1.y, we're done.
 	return sqrt(d1.xy);
 }
+
+#endif

@@ -1,3 +1,6 @@
+#ifndef CLASSIC_NOISE_2D_H
+#define CLASSIC_NOISE_2D_H
+
 //
 // GLSL textureless classic 2D noise "cnoise",
 // with an RSL-style periodic variant "pnoise".
@@ -111,3 +114,5 @@ float pnoise(vec2 P, vec2 rep)
   float n_xy = mix(n_x.x, n_x.y, fade_xy.y);
   return 2.3 * n_xy;
 }
+
+#endif

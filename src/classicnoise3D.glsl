@@ -1,3 +1,6 @@
+#ifndef CLASSIC_NOISE_3D_H
+#define CLASSIC_NOISE_3D_H
+
 //
 // GLSL textureless classic 3D noise "cnoise",
 // with an RSL-style periodic variant "pnoise".
@@ -175,3 +178,5 @@ float pnoise(vec3 P, vec3 rep)
   float n_xyz = mix(n_yz.x, n_yz.y, fade_xyz.x); 
   return 2.2 * n_xyz;
 }
+
+#endif

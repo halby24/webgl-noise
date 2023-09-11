@@ -1,3 +1,6 @@
+#ifndef NOISE_3D_GRAD_H
+#define NOISE_3D_GRAD_H
+
 //
 // Description : Array and textureless GLSL 2D/3D/4D simplex 
 //               noise functions.
@@ -109,3 +112,5 @@ float snoise(vec3 v, out vec3 gradient)
 
   return 105.0 * dot(m4, pdotx);
 }
+
+#endif

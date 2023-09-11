@@ -1,3 +1,6 @@
+#ifndef PSRD_NOISE_2D_H
+#define PSRD_NOISE_2D_H
+
 //
 // vec3  psrdnoise(vec2 pos, vec2 per, float rot)
 // vec3  psdnoise(vec2 pos, vec2 per)
@@ -460,3 +463,5 @@ float srnoise(vec2 pos, float rot) {
 float snoise(vec2 pos) {
   return srnoise(pos, 0.0);
 }
+
+#endif

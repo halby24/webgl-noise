@@ -1,3 +1,6 @@
+#ifndef NOISE_4D_H
+#define NOISE_4D_H
+
 //
 // Description : Array and textureless GLSL 2D/3D/4D simplex 
 //               noise functions.
@@ -127,3 +130,5 @@ float snoise(vec4 v)
                + dot(m1*m1, vec2( dot( p3, x3 ), dot( p4, x4 ) ) ) ) ;
 
   }
+
+#endif

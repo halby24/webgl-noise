@@ -1,3 +1,6 @@
+#ifndef CLASSIC_NOISE_4D_H
+#define CLASSIC_NOISE_4D_H
+
 //
 // GLSL textureless classic 4D noise "cnoise",
 // with an RSL-style periodic variant "pnoise".
@@ -300,3 +303,5 @@ float pnoise(vec4 P, vec4 rep)
   float n_xyzw = mix(n_yzw.x, n_yzw.y, fade_xyzw.x);
   return 2.2 * n_xyzw;
 }
+
+#endif

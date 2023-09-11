@@ -1,4 +1,5 @@
-#version 120
+#ifndef CELLULAR_2X2_H
+#define CELLULAR_2X2_H
 
 // Cellular noise ("Worley noise") in 2D in GLSL.
 // Copyright (c) Stefan Gustavson 2011-04-19. All rights reserved.
@@ -62,3 +63,5 @@ vec2 cellular2x2(vec2 P) {
 	return sqrt(d.xy);
 #endif
 }
+
+#endif

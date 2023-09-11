@@ -1,4 +1,5 @@
-#version 120
+#ifndef CELLULAR_3D_H
+#define CELLULAR_3D_H
 
 // Cellular noise ("Worley noise") in 3D in GLSL.
 // Copyright (c) Stefan Gustavson 2011-04-19. All rights reserved.
@@ -185,3 +186,5 @@ vec2 cellular(vec3 P) {
 	return sqrt(d11.xy); // F1, F2
 #endif
 }
+
+#endif
